@@ -1,3 +1,41 @@
 # Understand your data
 
-Data poses a cognitive problem; Data comprehension is a skill.
+## The Checklist for Exploring Data
+Congratulations! You were able to open your file. Now have a look at the following points.
+
+Check your metadata
+-	Do you know who released the data?
+-	Do you understand how you can use the data under its licence?
+-	Have you counted the number of rows?
+-	Have you counted the number of columns?
+-	Do you have a data dictionary, i.e. an explanation of the columns and potentially abbreviations?
+-	Do you know the unit of analysis, i.e. what's a ‘record’, what’s in a row?
+
+Check your data formats
+-	Have you looked at the first 5 rows?
+-	Have you looked at the last 5 rows?
+-	Have you looked at 5 random rows?
+-	If there are **numbers**, are they recognised as a number format?
+-	Are the units consistent?
+-	If there are **dates**, are they recognised as a date format?
+-	Do you understand the date format (e.g. 11/12 vs 12/11)?
+-	If there are **categorical** variables (e.g. months), are they stored as strings (e.g. “Dec”) or as factors/other (e.g. “12”)?
+-	Do you know the complete list of allowed answers for categorical variables? E.g. for quarter: spring, summer, autumn, winter and Q1-Q4.
+-	If there are **string** variables (= text), do you know if it was entered manually? (If so, take extra care!)
+
+Check your missing data
+-	Do you know what symbol stands for a missing data or "NA"?
+-	Are there any other codes such as "unknown" or "-99" that might also be missing data?
+-	Did you count the number of missing data?
+-	Are there any columns that are empty or almost empty (less than 5% of valid data)? Those may not be useful at all.
+-	Are there more missing data than you expected?
+-	Do you suspect a systematic process that explains the missing data?
+
+Check your data
+-	Did you create a table of counts (frequency table) for categorical variables?
+-	And do you know the maximum length of your string variables?
+-	Have you calculated any averages, e.g. mean or median?
+-	Have you calculated a measure of spread, such as the standard deviation?
+-	Do you know the extreme values, small and large?
+-	If there are outliers (i.e. unusual extreme values), do you know why?
+-	Did you inspect them visually, e.g. with a histogram? (Note: In Excel this can only be done by loading an add-on.)
